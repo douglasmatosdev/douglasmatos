@@ -1,0 +1,54 @@
+.mainFooter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: $defaultColor;
+}
+
+
+.formContact {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.formContact-fild,
+.formContact-textarea,
+.formContact-button {
+    width: 100%;
+    border: 1px solid $assistantColor;
+    margin-bottom: 2%;
+    background: $defaultColor;
+    padding: 2%;
+    color: $assistantColor;
+}
+
+.formContact-button { 
+    font-size: 1rem;
+ }
+
+.formContact-fild::placeholder,
+.formContact-textarea::placeholder {
+    color: $whiteColor;
+    font-size: 1rem;
+    font-family: 'Open-Sans', sans-serif;
+}
+
+.formContact-textarea {
+    width: 100%;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    
+    font-size: 100%;
+    font-weight: 500;
+    color: $whiteColor;
+
+    margin-top: 2%;
+    padding: 5% 2%;
+
+    border-top: 1px solid #777;
+}
+
+

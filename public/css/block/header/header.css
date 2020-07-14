@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css?family=Satisfy&display=swap");
+/* MAIN HEADER */
+.mainHeader {
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  padding: 1rem;
+  background: url(../../../images/douglasmatosdev.png);
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: 10%;
+  background-attachment: fixed;
+  border-top: 5px solid #ccc;
+}
+
+/* LOGO */
+.logo {
+  width: 80px;
+  height: 80px;
+  margin: 0;
+}
+
+.logo-image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  background: url(../../images/douglasmatosdev-icon.png) center no-repeat;
+  background-size: contain;
+  border-radius: 100%;
+}
+
+.logo-image h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+/* MAIN NAV */
+@media (max-width: 600px) {
+  .btnNavMenu-show,
+  .btnNavMenu-hide {
+    font-size: 2em;
+    background: none;
+  }
+  .btnNavMenu-show {
+    color: #ccc;
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    width: 50px;
+    height: 50px;
+    padding-top: .125em;
+    vertical-align: middle;
+    margin: 0.5;
+  }
+  .btnNavMenu-hide {
+    color: #ccc;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    height: 50px;
+    width: 50px;
+  }
+  .mainNav {
+    background: #222;
+    padding: 20% 1em 1em 1em;
+    margin: 0;
+    border-right: 5px solid #ccc;
+    height: 100%;
+    width: 80%;
+    max-width: 320px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -100%;
+    -webkit-transition: left 0.3s ease-out;
+    transition: left 0.3s ease-out;
+  }
+  .menu-ativo .mainNav {
+    left: 0;
+  }
+  .menu-ativo:after {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .menuNav,
+  .subMenuNav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 80%;
+  }
+  .menuNav li,
+  .subMenuNav li {
+    position: relative;
+    padding: 1em;
+    width: 100%;
+    background: #222;
+  }
+  .subMenuNav {
+    position: relative;
+    left: 25%;
+    top: 2%;
+    display: none;
+    -webkit-transition: 1s ease-out;
+    transition: 1s ease-out;
+  }
+  .fromLeft, .subFromLeft {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .subFromLeft {
+    display: block;
+    text-decoration: none;
+    background: #222;
+    padding: 2%;
+    width: 100%;
+  }
+  /* Fix IE. Hide from IE Mac \*/
+  * html ul li {
+    float: left;
+  }
+  * html ul li a {
+    height: 1%;
+  }
+  /* End */
+  .showSubMenu {
+    display: block;
+  }
+}
+
+/* TEXT HEADER */
+.textHeader {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  height: 70vh;
+  margin-top: 20%;
+}
+
+.textHeader-name {
+  width: 100%;
+  height: 100%;
+  height: 50vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+.textHeader-name-first-name,
+.textHeader-name-last-name {
+  font-size: 4rem;
+  font-family: sans-serif;
+  font-weight: 900;
+  color: #bebebe;
+  text-shadow: 1px 1px 5px #000;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.textHeader-profession {
+  font-family: 'Satisfy', cursive;
+  font-size: 3rem;
+  color: lightskyblue;
+  text-shadow: 1px 1px 5px #000;
+}
+/*# sourceMappingURL=header.css.map */

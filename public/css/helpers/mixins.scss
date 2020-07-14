@@ -1,0 +1,78 @@
+// DIMENSIONS
+@mixin widthAndHeight($width: null, $height: null) {
+  width: $width;
+  height: $height;
+}
+
+// POSITIONS
+@mixin position(
+  $position,
+  $top: null,
+  $right: null,
+  $bottom: null,
+  $left: null
+) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+// BACKGROUND
+@mixin  background($url: null, $repeat: null, $size: null, $position: null, $type: null) {
+    background: $url;
+    background-repeat: $repeat;
+    background-size: $size;
+    background-position: $position;
+    background-attachment: $type;
+}
+
+// BORDERS
+@mixin border($width:null, $type:null, $color: null) {
+    border: $width $type $color;
+}
+
+@mixin border-radius($radius: null) {
+    border-radius: $radius;
+}
+
+@mixin border-top($width:null, $type:null, $color: null) {
+    border-top: $width $type $color;
+}
+
+@mixin border-right($width:null, $type:null, $color: null) {
+    border-right: $width $type $color;
+}
+
+@mixin border-bottom($width:null, $type:null, $color: null) {
+    border-bottom: $width $type $color;
+}
+
+@mixin border-left($width:null, $type:null, $color: null) {
+    border-left: $width $type $color;
+}
+
+
+// MIXIN FOR ALL BORDERS
+@mixin allBorders($borderType, $radius, $width: null, $type: null, $color: null) {
+    @if $borderType == border {
+        @include border($width, $type, $color);
+
+    }  @if $borderType == border-radius {
+        @include border-radius($radius);
+
+    } @if $borderType == border-top {
+        @include border-top($width, $type, $color);
+
+    } @if $borderType == border-right {
+        @include border-right($width, $type, $color);
+
+    } @if $borderType == border-bottom {
+        @include border-bottom($width, $type, $color);
+
+    } @if $borderType == border-left {
+        @include border-left($width, $type, $color);
+
+    }
+}

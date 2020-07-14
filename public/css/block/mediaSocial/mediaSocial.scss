@@ -1,0 +1,40 @@
+
+
+/* MEDIAS SOCIALS */
+.medias-socials-menu {
+    position: fixed;
+    top: 100px;
+    margin: 0;
+    padding: 10% 0 0 0;
+    left: 0;
+    z-index: 900;
+    display: block;
+    box-sizing: border-box
+}
+
+.social-menu-item {
+    overflow: hidden;
+    margin: 0 0 4% 0;
+    padding: 0
+}
+
+.social-menu-item a {
+    display: inline-block;
+    background: $whiteColor;
+    font-size: 1em;
+    border-radius: 0 5px 5px 0;
+    color: #888;
+    line-height: 1.5em;
+    white-space: nowrap;
+    padding: 5px 15px 5px 15px;
+    vertical-align: middle;
+    transition: all .2s
+}
+
+.fa-text-hide {
+    display: none
+}
+
+.fa-text-show {
+    display: inline-block
+}

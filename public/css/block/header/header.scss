@@ -1,0 +1,180 @@
+/* MAIN HEADER */
+.mainHeader {
+    @include widthAndHeight;
+    @include background($url:url(../../../images/douglasmatosdev.png), $repeat: no-repeat, $size: 200%, $position: 10%);
+    @include allBorders(border-top, 5px, solid, $assistantColor);
+    max-width: 1400px;
+    padding: 1rem;
+}
+
+/* LOGO */
+// .logo {
+//     @include widthAndHeight(80px, 80px);
+//     margin: 0;
+    
+// }
+
+// .logo-image {
+//     display: inline-block;
+//     vertical-align: middle;
+//     @include widthAndHeight(50px, 50px);
+//     background: url(../../images/douglasmatosdev-icon.png) center no-repeat;
+//     background-size: contain;
+    
+//     border-radius: 100%;
+// }
+
+// .logo-image h1 {
+//     margin: 0;
+//     padding: 0;
+//     font-size: 0;
+// }
+
+/* MAIN NAV */
+
+@media (max-width: 600px) {
+    .mainNav {
+        max-width: 320px;
+        @include widthAndHeight(80%, 100%);
+        @include position(fixed, $top: 0, $left: -100%);
+        margin: 0;
+        padding: 20% 1em 1em 1em;
+        background: $defaultColor;
+        border-right: 5px solid $assistantColor;
+        z-index: 1;
+        transition: left 0.3s ease-out;
+
+            .btnNavMenu-hide {
+                color: $assistantColor;
+                @include position(absolute, 2%, 5%);
+                @include widthAndHeight(50px, 50px);
+            }
+    }
+    .btnNavMenu-show,
+    .btnNavMenu-hide {
+        font-size: 2em;
+        background: none;
+    }
+    
+    .btnNavMenu-show {
+        color: $assistantColor;
+        position: absolute;
+        top: 2%;
+        left: 5%;
+        @include widthAndHeight(50px, 50px);
+        padding-top: .125em;
+        vertical-align: middle;
+        margin: 0.5;
+    }
+
+    .menu-ativo .mainNav {
+        left: 0;
+    }
+    
+    .menu-ativo:after {
+        content: "";
+        display: block;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    .menuNav,
+    .subMenuNav {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 80%;
+    }
+
+    .menuNav li,
+    .subMenuNav li {
+        position: relative;
+        padding: 1em ;
+        width: 100%;
+        background:$defaultColor;
+        
+    }
+
+    .subMenuNav {
+        position: relative;
+        left: 25%;
+        top: 2%;
+        display: none;
+        transition:  1s ease-out;
+
+            .subFromLeft {
+                display: block;
+                text-decoration: none;
+                background: $defaultColor;
+                padding: 2%;
+                width: 100%;
+            }
+        
+    }
+    .fromLeft, .subFromLeft {
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    /* Fix IE. Hide from IE Mac \*/
+    * html ul li { float: left; }
+    * html ul li a { height: 1%; }
+    /* End */
+    
+    .showSubMenu {
+        display: block;
+
+    }
+    
+    // Para notebook e desktop 
+    // li:hover ul { display: block; }
+
+}
+
+
+/* TEXT HEADER */
+.textHeader {
+    grid-row: 2/3;
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+   @include widthAndHeight(100%, 70vh);
+    margin-top: 20%;
+}
+
+.textHeader-name {
+    @include widthAndHeight(100%, 50vh);
+    display: grid;
+    align-content: flex-end;
+}
+.textHeader-name-first-name,
+.textHeader-name-last-name {
+    font-size: 4rem;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: $assistantColor;
+    text-shadow: 1px 1px 5px $blackColor;
+    text-transform: uppercase;
+
+    display: inline-block;
+    margin-top: 0;
+    padding: 0;
+
+    height: 100%;
+}
+   
+.textHeader-profession {
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+    color: $profession;
+    text-shadow: 1px 1px 5px $blackColor;
+}
+

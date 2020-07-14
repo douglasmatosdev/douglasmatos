@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Douglas Matos - Front End Developer</title>
+    <meta name="description" content="Desenvolvedor Web Front End, com foco em sites responsivos e aplicações Web.">
+    <meta name="keywords" content="Front End, Sites, Web, Programação, Desenvolvimento, API, Responsivo">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Douglas Matos da Silva">
+    <base href="./">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-5.10.2-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/icon.png">
+</head>
+
+<body>
+
+    <header class="mainHeader">
+        <div class="particles-js" id="particles-js"></div>
+        <!-- <div class="logo">
+            <a class="logo-image" href="#">
+                <h1>Douglas Matos Front End Developer</h1>
+            </a>
+        </div> -->
+
+        <button class="btn btnNavMenu-show">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="mainNav">
+
+            <button class="btn btnNavMenu-hide">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <ul class="menuNav">
+                <li class="menuNav-item">
+                    <a class="fromLeft" href="#" class="actived">Home</a>
+                </li>
+                <li class="menuNav-item">
+                    <a class="fromLeft" href="#works">Projects</a>
+                </li>
+                <li class="menuNav-item">
+                    <a class="fromLeft" href="#about-section">About</a>
+                </li>
+                <li class="menuNav-item">
+                    <a class="fromLeft" href="#contact">Contact</a>
+                </li>
+                <li class="menuNav-item">
+                    <a class="fromLeft" href="#">curriculo</a>
+                </li>
+                <li class="subMenuNav-setup">
+                        <a class="fromLeft" id="setup-particles" href="#">fun particles</a>
+                    </li>
+                <ul class="subMenuNav">
+                    <li class="subMenuNav-item">
+                        <a class="subFromLeft" id="fun-particles" href="#">start fun</a>
+                    </li>
+                    <li class="subMenuNav-item">
+                        <a class="subFromLeft" id="stop-fun-particles" href="#">stop fun</a>
+                    </li>
+                </ul>
+            </ul>
+
+
+        </nav>
+
+        <div class="textHeader">
+            <div class="textHeader-name">
+                <span class="textHeader-name-first-name">Douglas</span>
+                <span class="textHeader-name-last-name">Matos</span>
+            </div>
+            <span class="textHeader-profession">Front End Developer</span>
+        </div>
+
+    </header>
+    <main class="mainContent">
+
+
+    </main>
+
+    <footer class="mainFooter">
+
+        <!-- <div class="map" id="map"></div> -->
+
+        <div class="formContact-text">
+            <h1>Contact</h1>
+            <h3>Get in touch with me, for business or a quick hello!</h3>
+        </div>
+        <form class="formContact">
+            <input type="name" class="formContact-fild" id="name" name="name" required placeholder="Full Name">
+
+            <input type="email" class="formContact-fild" id="email" name="email" required placeholder="Email">
+
+            <textarea class="formContact-textarea" name="message" id="message" cols="30" rows="10"
+                placeholder="Message"></textarea>
+
+            <button id="formContact-button" class="formContact-button formContact-button-send"
+                type="submit">Send</button>
+        </form>
+
+        <span class="copyright">&copy; All right reserved Douglas Matos - 2019</span>
+
+        <a id="backtotop"" class=" backtotop" href="#top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="js/libs/particlesjs/particles.js"></script>
+    <script src="js/libs/particlesjs/app.js"></script>
+    <script src="js/libs/particlesjs/particles-modify.js"></script>
+    <script src="./js/buttonMenu.js"></script>
+    <!-- <script src="./js/mediasSociais.js"></script> -->
+    <script src="./js/backtotop.js"></script>
+    <!-- <script src="./js/resize.js"></script> -->
+    <!-- <script src="./js/map.js"></script> -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?AIzaSyAoXk3Py9Vjz0agA1VWQA2TLthxUAZ5CLs&callback=initMap"
+    async defer></script> -->
+
+</body>
+
+</html>
